@@ -1,0 +1,11 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Raw downloaded dataset cache (keep trained artifacts & assets tracked for GitHub!)
+data/
+.env
+.venv/
+venv/

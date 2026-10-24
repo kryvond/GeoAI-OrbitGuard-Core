@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kryvond-geoai-core"
+version = "1.0.0"
+description = "GPU-Accelerated Geospatial Intelligence & Physics-Informed Orbital Analytics Engine"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "Kryvond Space Engineering", email = "engineering@kryvond.space"}]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

@@ -1,0 +1,17 @@
+platform:
+  name: "Kryvond Space GeoAI & OrbitGuard Core"
+  domain: "https://kryvond.space"
+  version: "1.0.0"
+
+terravision_vit:
+  in_bands: 12
+  spectral_indices: ["ndvi", "ndwi", "ndbi", "sar_ratio"]
+  num_classes: 5
+  base_dim: 32
+  dataset: "EuroSAT Sentinel-2"
+
+orbitguard_pinn:
+  hidden_dim: 128
+  fourier_frequencies: 16
+  harmonic_model: "J2_oblateness"
+  dataset: "CelesTrak NORAD TLE (SENTINEL-2A)"

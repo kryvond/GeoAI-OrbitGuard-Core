@@ -1,0 +1,1 @@
+"""Kryvond FastAPI Inference Service."""

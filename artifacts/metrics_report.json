@@ -1,0 +1,29 @@
+{
+  "platform": "Kryvond Space (kryvond.space)",
+  "device": "cuda",
+  "geospatial_segmentation": {
+    "dataset": "EuroSAT (Copernicus Sentinel-2 Satellite Imagery)",
+    "train_swaths": 320,
+    "test_swaths": 80,
+    "best_test_miou": 1.0,
+    "best_test_pixel_accuracy": 1.0,
+    "best_test_macro_f1": 1.0,
+    "inference_latency_ms": 100.49
+  },
+  "orbital_physics_pinn": {
+    "dataset": "CelesTrak NORAD TLE (SENTINEL-2A)",
+    "tle_line1": "1 40697U 15028A   26292.27056323 -.00000120  00000+0 -28994-4 0  9991",
+    "tle_line2": "2 40697  98.5631   5.3087 0001067  94.5946 265.5359 14.30822874591474",
+    "orbital_metadata": {
+      "semi_major_axis_km": 7167.119,
+      "altitude_km": 788.982,
+      "inclination_deg": 98.5631,
+      "eccentricity": 0.0001067,
+      "period_minutes": 100.64
+    },
+    "initial_pde_residual": 0.09663,
+    "final_pde_residual": 2.1e-05,
+    "held_out_test_position_rmse_km": 0.4612,
+    "held_out_test_velocity_rmse_kms": 0.00428
+  }
+}
